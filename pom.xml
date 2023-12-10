@@ -3,6 +3,7 @@
   <groupId>webscrapper</groupId>
   <artifactId>webscrapper</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
   <build>
 	 <plugins>				
 			<plugin>
@@ -28,6 +29,7 @@
                 <suiteXmlfiles>testng.xml</suiteXmlfiles>
             </configuration>
         </plugin>
+         
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
