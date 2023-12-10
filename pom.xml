@@ -4,7 +4,22 @@
   <artifactId>webscrapper</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
- 
+ <build>
+    <plugins>
+        <plugin>
+            <groupId>io.takari.maven.plugins</groupId>
+            <artifactId>maven-wrapper-plugin</artifactId>
+            <version>0.6.5</version> <!-- Adjust version as needed -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>wrap</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
 	 
  <dependencies>
 	 <dependency>
