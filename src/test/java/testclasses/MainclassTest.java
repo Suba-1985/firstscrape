@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 import baseClass.BaseClass;
 
-public class Mainclass extends BaseClass{
+public class MainclassTest extends BaseClass{
 
 	HashMap<String,String[]> jobMap=new HashMap<>();
 	

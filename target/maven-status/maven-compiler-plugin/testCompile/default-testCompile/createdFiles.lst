@@ -1,4 +1,4 @@
-testclasses\IndeedJob.class
-testclasses\Mainclass.class
-testclasses\IndeedJobScraper.class
+testclasses\MainclassTest.class
 baseClass\BaseClass.class
+testclasses\IndeedJobScraperTest.class
+testclasses\IndeedJobTest.class

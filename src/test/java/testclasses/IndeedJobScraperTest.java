@@ -11,7 +11,7 @@ import baseClass.BaseClass;
 import java.time.Duration;
 import java.util.List;
 
-	public class IndeedJobScraper extends BaseClass{
+	public class IndeedJobScraperTest extends BaseClass{
 	    public static void main(String[] args) {
 	      
 	    	System.out.println("sdsdfvsdvsfd");

@@ -7,14 +7,14 @@ import org.testng.annotations.Test;
 
 import baseClass.BaseClass;
 
-public class IndeedJob extends BaseClass{
+public class IndeedJobTest extends BaseClass{
 	
 	    private String jobTitle;
 	    private String jobCompName;
 	    private String jobLocation;
 
 	  
-	    public IndeedJob(String string, String string2, String string3) {
+	    public IndeedJobTest(String string, String string2, String string3) {
 			// TODO Auto-generated constructor stub
 		}
 
