@@ -5,7 +5,7 @@
     <classes>  
       <class name="testclasses.Mainclass"/>
        <class name="testclasses.IndeedjobScraper"/>
-        <class name="testclasses.Indeedjob"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -3,6 +3,9 @@
   <groupId>webscrapper</groupId>
   <artifactId>webscrapper</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+	  <suiteXmlFile>testng.xml</suiteXmlFile>
+  </properties>
   
   <build>
 	 <plugins>				
@@ -24,9 +27,9 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.22.0</version>
+            <version>3.0.0-M5</version>
             <configuration>
-                <suiteXmlfiles>testng.xml</suiteXmlfiles>
+                <suiteXmlfiles>${suiteXmlFile}</suiteXmlfiles>
             </configuration>
         </plugin>
          
@@ -54,7 +57,7 @@
 	 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.6.0</version>
+    <version>3.8.1</version>
 </dependency>
 <dependency>
 	<groupId>junit</groupId>
@@ -66,7 +69,7 @@
 <dependency>
 <groupId>org.testng</groupId>
 <artifactId>testng</artifactId>
-<version>7.7.1</version>
+<version>6.8</version>
 <scope>test</scope>
 </dependency>
 

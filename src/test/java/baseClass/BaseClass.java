@@ -18,7 +18,7 @@ public class BaseClass {
 	public void init_browser() {
 		driver=new ChromeDriver();
 		ChromeOptions option=new ChromeOptions();
-		//option.addArguments("--headless");
+		option.addArguments("--headless");
 		
 		driver.get("https://www.indeed.com/");
 	    driver.manage().window().maximize();
