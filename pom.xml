@@ -5,58 +5,26 @@
   <version>0.0.1-SNAPSHOT</version>
   <build>
 	 <plugins>
-		<plugin>
-			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-			    <groupId>org.apache.maven.plugins</groupId>
-			    <artifactId>maven-surefire-plugin</artifactId>
-			    <version>3.0.0</version>
-	      		<configuration>
-					  <includes>
-							<include>testng.xml</include>
-						</includes>
-            	</configuration>
-		</plugin>
-		<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
-			<configuration>
-          	<source>1.9</source>
-          	<target>1.9</target>
-        	</configuration>
-			</plugin>
+		
+			  
+		
 			
 			<plugin>
             <artifactId>maven-clean-plugin</artifactId>
             <version>3.1.0</version>
-            <executions>
-                <execution>
-                    <id>clean-allure-results</id>
-                    <phase>clean</phase>
-                    <goals>
-                        <goal>clean</goal>
-                    </goals>
-                    <configuration>
-                        <filesets>
-                            <fileset>
-                                <directory>allure-results</directory>
-                            </fileset>
-                        </filesets>
-                    </configuration>
-                </execution>
-            </executions>
+            
         </plugin>
 	
    
-      <!--  <plugin>
+       <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version>
+            <version>3.10.1</version>
             <configuration>
-                <source>1.8</source>
-                <target>1.8</target>
+                <source>11</source>
+                <target>11</target>
             </configuration>
-        </plugin>-->
+        </plugin>
       
       <!--  <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -80,18 +48,30 @@
 </build>
 	 
  <dependencies>
+	     <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.24</version>
+        <scope>provided</scope>
+    </dependency>
+
 	 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>5.6.0</version>
 </dependency>
-
+<dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit</artifactId>
+	<version>4.13.2</version>
+	<scope>test</scope>
+</dependency>
 <!--  https://mvnrepository.com/artifact/org.testng/testng  -->
 <dependency>
 <groupId>org.testng</groupId>
 <artifactId>testng</artifactId>
-<version>7.8.0</version>
-<scope>test</scope>
+<version>7.7.1</version>
+<scope>compile</scope>
 </dependency>
 
 <dependency>

@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-09T12:32:20 EST" name="Default suite" finished-at="2023-12-09T12:43:35 EST" duration-ms="674539">
+  <suite started-at="2023-12-10T01:32:02 EST" name="Suite" finished-at="2023-12-10T01:32:27 EST" duration-ms="25038">
     <groups>
     </groups>
-    <test started-at="2023-12-09T12:32:20 EST" name="Default test" finished-at="2023-12-09T12:43:35 EST" duration-ms="674539">
+    <test started-at="2023-12-10T01:32:02 EST" name="Test" finished-at="2023-12-10T01:32:27 EST" duration-ms="25038">
       <class name="testclasses.Mainclass">
-        <test-method is-config="true" signature="init_browser()[pri:0, instance:testclasses.Mainclass@d5b810e]" started-at="2023-12-09T12:32:20 EST" name="init_browser" finished-at="2023-12-09T12:32:23 EST" duration-ms="2467" status="PASS">
+        <test-method is-config="true" signature="init_browser()[pri:0, instance:testclasses.Mainclass@1de76cc7]" started-at="2023-12-10T01:32:02 EST" name="init_browser" finished-at="2023-12-10T01:32:05 EST" duration-ms="3003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init_browser -->
-        <test-method signature="test1()[pri:1, instance:testclasses.Mainclass@d5b810e]" started-at="2023-12-09T12:32:23 EST" name="test1" finished-at="2023-12-09T12:32:24 EST" duration-ms="1272" status="PASS">
+        <test-method signature="test1()[pri:1, instance:testclasses.Mainclass@1de76cc7]" started-at="2023-12-10T01:32:05 EST" name="test1" finished-at="2023-12-10T01:32:06 EST" duration-ms="1551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="paginationTest()[pri:2, instance:testclasses.Mainclass@d5b810e]" started-at="2023-12-09T12:32:24 EST" name="paginationTest" finished-at="2023-12-09T12:43:35 EST" duration-ms="670765" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="paginationTest()[pri:2, instance:testclasses.Mainclass@1de76cc7]" started-at="2023-12-10T01:32:06 EST" name="paginationTest" finished-at="2023-12-10T01:32:27 EST" duration-ms="20443" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=119.0.6045.200)
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [00febf5dd2dc3a3d34c2e211cfebbcd2, executeScript {script=window.scrollBy(0,250), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\subas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59950/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 00febf5dd2dc3a3d34c2e211cfebbcd2]]>
+Command: [aad10dbd65d3fb5cd25e95843ea868e1, executeScript {script=window.scrollBy(0,250), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\subas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53480/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aad10dbd65d3fb5cd25e95843ea868e1]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=119.0.6045.200)
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [00febf5dd2dc3a3d34c2e211cfebbcd2, executeScript {script=window.scrollBy(0,250), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\subas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59950/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 00febf5dd2dc3a3d34c2e211cfebbcd2
+Command: [aad10dbd65d3fb5cd25e95843ea868e1, executeScript {script=window.scrollBy(0,250), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\subas\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53480}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53480/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aad10dbd65d3fb5cd25e95843ea868e1
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -82,15 +82,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- paginationTest -->
-        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testclasses.Mainclass@d5b810e]" started-at="2023-12-09T12:43:35 EST" name="closebrowser" finished-at="2023-12-09T12:43:37 EST" duration-ms="2311" status="PASS">
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testclasses.Mainclass@1de76cc7]" started-at="2023-12-10T01:32:27 EST" name="closebrowser" finished-at="2023-12-10T01:32:27 EST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closebrowser -->
       </class> <!-- testclasses.Mainclass -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
