@@ -4,6 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>  
       <class name="testclasses.Mainclass"/>
+       <class name="testclasses.IndeedjobScraper"/>
+        <class name="testclasses.Indeedjob"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
