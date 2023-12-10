@@ -3,10 +3,52 @@
   <groupId>webscrapper</groupId>
   <artifactId>webscrapper</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
- <build>
-    <plugins>
-        <plugin>
+  <build>
+	 <plugins>
+		<plugin>
+			<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-surefire-plugin</artifactId>
+			    <version>3.0.0</version>
+	      		<configuration>
+					  <includes>
+							<include>testng.xml</include>
+						</includes>
+            	</configuration>
+		</plugin>
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+			<configuration>
+          	<source>1.9</source>
+          	<target>1.9</target>
+        	</configuration>
+			</plugin>
+			
+			<plugin>
+            <artifactId>maven-clean-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+                <execution>
+                    <id>clean-allure-results</id>
+                    <phase>clean</phase>
+                    <goals>
+                        <goal>clean</goal>
+                    </goals>
+                    <configuration>
+                        <filesets>
+                            <fileset>
+                                <directory>allure-results</directory>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+	
+   
+      <!--  <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.1</version>
@@ -14,16 +56,16 @@
                 <source>1.8</source>
                 <target>1.8</target>
             </configuration>
-        </plugin>
+        </plugin>-->
       
-        <plugin>
+      <!--  <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.22.0</version>
             <configuration>
                 <suiteXmlfiles>testng.xml</suiteXmlfiles>
             </configuration>
-        </plugin>
+        </plugin>-->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
